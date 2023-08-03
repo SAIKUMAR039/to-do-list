@@ -1,98 +1,100 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-  }
+  font-family: Arial, sans-serif;
+ 
+
+  height: 100vh;
+  background: linear-gradient(90deg, #e52e71, #ff8a00);
+
+
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
   
-  .container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#todo-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   
-  h1 {
-    text-align: center;
-    color: #333;
-  }
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+li .task {
+  flex-grow: 1;
+}
+
+li .delete-btn {
+  background-color: #ff4d4d;
   
-  #todo-form {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  
-  #task-input {
-    flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    margin-left: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #555;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
-  
-  li .task {
-    flex-grow: 1;
-  }
-  
-  li .delete-btn {
-    background-color: #ff4d4d;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  li .delete-btn:hover {
-    background-color: #ff0000;
-  }
-  
-  .container {
-    background: linear-gradient(145deg, #e0e0e0, #ffffff);
-  }
-  
-  .container:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    transform: rotateY(30deg) rotateX(30deg) perspective(200px) scale(1.2);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-  
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+li .delete-btn:hover {
+  background-color: #ff0000;
+}
+
+
+
+.container:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+ 
+  border-radius: 10px;
+  transform: rotateY(30deg) rotateX(30deg) perspective(200px) scale(1.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
